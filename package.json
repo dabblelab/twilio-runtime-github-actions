@@ -1,5 +1,5 @@
 {
-  "name": "twilio-ci-test-v2",
+  "name": "twilio-ci-test",
   "version": "0.0.0",
   "private": true,
   "scripts": {
