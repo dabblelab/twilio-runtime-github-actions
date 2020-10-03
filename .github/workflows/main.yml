@@ -1,8 +1,10 @@
 # This is a basic workflow to publish a Twilio Runtime functions and assets with Github Actions
 name: Twilio Runtime Deploy
+
 on:
   push:
     branches: [ master ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
