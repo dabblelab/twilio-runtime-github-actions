@@ -1,0 +1,28 @@
+{
+  "name": "twilio-runtime-github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "twilio-run --env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabblelab/twilio-runtime-github-actions.git"
+  },
+  "keywords": [],
+  "author": "Dabble Lab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dabblelab/twilio-runtime-github-actions/issues"
+  },
+  "homepage": "https://github.com/dabblelab/twilio-runtime-github-actions#readme",
+  "devDependencies": {
+    "twilio-run": "^2.0.0"
+  },
+  "engines": {
+    "node" : ">=8.0.0 <11.0.0" 
+  }
+}
