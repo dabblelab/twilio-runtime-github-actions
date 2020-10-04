@@ -41,7 +41,6 @@ You'll need to provide an `Account SID`, `API Key`, and `API Secret` that Github
 
 ## Review the Github Actions Flow
 The Github Actions Flow is located in `.github/workflows/main.yml`. This is a text file in [YAML Format](https://en.wikipedia.org/wiki/YAML) that defines when the workflow is triggered and the job it will perform. 
-
 The parts to note in the file are:
 
 1. The workflow is triggered when code is pushed to the master branch.
