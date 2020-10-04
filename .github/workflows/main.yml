@@ -1,17 +1,29 @@
-# This is a basic workflow to publish a Twilio Runtime functions and assets with Github Actions
-name: Twilio Runtime Deploy
+# This is a basic workflow to publish a Twilio function with Github Actions
+
+name: Twilio CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # This workflow contains a single job called "build"
   build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      # Runs a single command using the runners shell
       - name: Install dependencies for the twilio function
         run: npm ci
       - name: Install twilio cli and run deploy command
@@ -19,4 +31,5 @@ jobs:
          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
          TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
          TWILIO_API_SECRET: ${{secrets.TWILIO_API_SECRET}}
-        run: npm install twilio-cli -g && twilio plugins:install @twilio-labs/plugin-serverless && twilio serverless:deploy --force
+        # Install the Twilio CLI and the serverless plugin then deploy the function
+        run: npm install twilio-cli -g && twilio plugins:install @twilio-labs/plugin-serverless && twilio serverless:deploy --environment=dev --force
