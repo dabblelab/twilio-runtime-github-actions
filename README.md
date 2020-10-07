@@ -6,7 +6,7 @@ This is a template for a Github Actions workflow that deploys Twilio Runtime fun
 
 ## Tutorial
 
-<a href="https://youtu.be/g5TbMMdlxLs"><img src="http://img.youtube.com/vi/g5TbMMdlxLs/maxresdefault.jpg" alt="CI/CD for Twilio Functions with GitHub Actions" height="480" /></a>
+<a href="https://youtu.be/g5TbMMdlxLs"><img src="./assets/cover.png" alt="CI/CD for Twilio Functions with GitHub Actions" height="480" /></a>
 
 ## STEPS
 
