@@ -1,8 +1,12 @@
-# Twilio Runtime Github Actions
+# CI/CD for Twilio Functions with GitHub Actions
 
 This is a template for a Github Actions workflow that deploys Twilio Runtime functions and assets when code changes are pushed to a Github repository.
 
 > NOTE: You'll need a [Twilio Account](https://twilio.com) and a [Github Account](https://github.com) to complete the following steps.
+
+## Tutorial
+
+<a href="https://youtu.be/g5TbMMdlxLs"><img src="http://img.youtube.com/vi/g5TbMMdlxLs/maxresdefault.jpg" alt="CI/CD for Twilio Functions with GitHub Actions" height="480" /></a>
 
 ## STEPS
 
